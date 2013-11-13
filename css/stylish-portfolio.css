@@ -6,6 +6,8 @@ body {
   width: 100%;
 }
 
+
+
 a {
   color: #3F5F6C;
   text-decoration: none;
@@ -232,4 +234,22 @@ footer {
   color: #ffffff;
   background-color: #6BA1B7;
   border-color: #6BA1B7;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  background-color: #DEF3FF;
+  border-color: #DEF3FF;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #DEF3FF;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #DEF3FF;
 }
