@@ -30,6 +30,35 @@
         </script>
         <!--end google analytics-->
 
+
+  <!--google maps-->
+  <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+
+    <script
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8FK9UKilwQvPOEfidG-F0ggxubGP9kIk&sensor=false">
+    </script>
+
+    <script>
+      function initialize()
+      {
+        var mapProp = {
+          center:new google.maps.LatLng(34.15406,-83.89486),
+          zoom:13,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+    
+
   </head>
 
   <body>
@@ -66,6 +95,14 @@
   
     
     <!-- /Full Page Image Header Area -->
+
+    <!-- Callout -->
+    <div class="calloutBike2">
+      <div class="vert-text3">
+        <h1>Ceremony</h1>
+      </div>
+    </div>
+    <!-- /Callout -->
   
     <!-- Intro -->
     <div id="intro" class="intro">
@@ -73,7 +110,13 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
             <h2>Please join us for the wedding ceremony!</h2>
-            <p class="lead">The ceremony will be held at <a href="http://www.popcatholicchurch.org/" target="_blank">Prince of Peace Catholic Church</a></p>
+            <p class="lead">The ceremony will be held at <br>
+            <a href="http://www.popcatholicchurch.org/" target="_blank">Prince of Peace Catholic Church</a></p>
+            <img src="img/pop.jpg" alt="">
+            <p>6439 Spout Springs Road <br> 
+            Flowery Branch, GA 30542</p>
+            <div id="googleMap" style="width:500px;height:380px;"></div>
+
           </div>
         </div>
       </div>
@@ -89,7 +132,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
-            <a href="reception.html"><h3>Next, it's time to celebrate!</h3></a>
+          <a href="reception.html" class="btn btn-lg btn-default">Next, it's time to celebrate!</a>
           </div>
         </div>
       </div>

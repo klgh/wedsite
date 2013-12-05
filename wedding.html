@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <title>k&amp;s | proposal</title>
+    <title>k&amp;s | wedding</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -29,7 +29,36 @@
           ga('send', 'pageview');
         </script>
         <!--end google analytics-->
-        
+
+
+  <!--google maps-->
+  <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100% }
+    </style>
+
+    <script
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD8FK9UKilwQvPOEfidG-F0ggxubGP9kIk&sensor=false">
+    </script>
+
+    <script>
+      function initialize()
+      {
+        var mapProp = {
+          center:new google.maps.LatLng(34.15406,-83.89486),
+          zoom:13,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+    
+
   </head>
 
   <body>
@@ -63,44 +92,88 @@
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
+  
+    
+    <!-- /Full Page Image Header Area -->
 
-
- 
-
-
-    <!-- header -->
-    <div class="callout">
-      <div class="vert-text">
-        <h1>the proposal</h1>
-        <h3>september 14, 2013</h3>
+    <!-- Callout -->
+    <div class="calloutBike2">
+      <div class="vert-text3">
+        <h1>Ceremony</h1>
       </div>
     </div>
-    <!-- /header -->
+    <!-- /Callout -->
   
-  
-
-
-    <!-- about -->
+    <!-- Intro -->
     <div id="intro" class="intro">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
-            <h4>kaleigh says:</h4>
-            <p>Sesame snaps jelly-o sweet liquorice marzipan sweet halvah toffee. Macaroon donut tart carrot cake. Applicake carrot cake macaroon gummi bears. Powder jelly-o chocolate cake pie danish lemon drops croissant bonbon. Chupa chups sesame snaps fruitcake candy canes chocolate cake caramels pie fruitcake soufflé. Croissant cotton candy marzipan powder gingerbread applicake sweet roll. Fruitcake carrot cake cake. Croissant tootsie roll marzipan sweet roll sesame snaps marshmallow sweet roll. Soufflé sweet roll dragée apple pie bonbon gingerbread liquorice sweet roll. Tootsie roll chocolate soufflé pastry topping soufflé chocolate jujubes.</p>
-            <h4>shaun says:</h4>
-            <p>Lemon drops pastry sugar plum. Caramels cotton candy cheesecake pudding jujubes. Muffin chocolate bonbon danish applicake. Oat cake unerdwear.com pastry fruitcake jelly beans fruitcake bear claw chocolate jelly-o. Donut apple pie tiramisu sugar plum pudding cotton candy icing. Carrot cake candy icing. Dragée cake chocolate danish tart fruitcake jelly beans.</p>
-            <p>Marzipan I love sesame snaps oat cake unerdwear.com biscuit. Jujubes toffee I love I love lollipop carrot cake chocolate bar dragée. Wafer oat cake biscuit danish. Dragée I love I love. Candy canes biscuit halvah danish. Wafer jelly beans croissant marshmallow gummi bears. Pie toffee jujubes donut toffee biscuit dessert.</p>
-           
+            <h2>Please join us for the wedding ceremony!</h2>
+            <p class="lead">The ceremony will be held at <br>
+            <a href="http://www.popcatholicchurch.org/" target="_blank">Prince of Peace Catholic Church</a></p>
+            <img src="img/pop.jpg" alt="">
+            <p>6439 Spout Springs Road <br> 
+            Flowery Branch, GA 30542</p>
           </div>
         </div>
       </div>
     </div>
-    <!-- /about -->
+    <!-- /Intro -->
   
-    <!-- header -->
-    <div class="callout">
+    
+
+
+
+     <!-- Callout -->
+    <div class="calloutBike">
+      <div class="vert-text2">
+        <h1>Reception</h1>
+      </div>
     </div>
-    <!-- /header -->
+    <!-- /Callout -->
+
+    <!-- Portfolio -->
+    <div class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+          <h2>Now it's time to celebrate!</h2>
+          <h5>at</h5>
+            <h3>Four Oaks Manor</h3>
+            <p>3198 Hamilton Mill Road <br>
+            Buford, GA 30519</p>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <div class="portfolio-item">
+              <a href=""></a>
+              <h4>please join us for</h4>
+              <h4>heavy hors d'oeuvres &amp; s'mores</h4>
+            <div id="googleMap" style="width:500px;height:380px;"></div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- /Portfolio -->
+
+    <!-- Call to Action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <a href="guests.html" class="btn btn-lg btn-default">Guest Info</a>
+            <a href="faq.html" class="btn btn-lg btn-default">F.A.Q.'s</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
 
 
     <!-- Footer -->
@@ -108,6 +181,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
+            
             <hr>
             <a href="http://kaleighleach.com" target="_blank"><p>Kaleigh 2013</p></a>
           </div>
